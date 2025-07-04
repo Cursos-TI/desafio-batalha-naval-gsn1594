@@ -1,16 +1,18 @@
 #include <stdio.h>
 
 int main(){
-int h=3;
-    //cria a matriz 10x10.
+
+    int h=3;
+
+//cria a matriz 10x10.
 
    int tab[10][10];
 
-    //criar as letras de cima A a L     
+ //criar as letras de cima A a L     
 
    char letras[10]={'A','B','C','D','E','F','G','H','J','I'};
 
-//criar o mar com 0 nas matrizes.
+//Criar o mar com 0 nas matrizes.
 
     for(int i=0;i<10;i++){
 
@@ -23,27 +25,25 @@ int h=3;
     }  
     }
 
-//cria barco na horizontal e vertical.
+//Cria barco na horizontal e vertical.
 
 while(h<6){
 
-tab[0][h]=3;
-tab[h][5]=3;
+    tab[0][h]=3;
+    tab[h][5]=3;
 
-
-h++;
+    h++;
 
 }
         
-
-
+//Cria o print do tabulheiro.
     printf("  "); 
 
     for(int l=0;l<10;l++){
 
          printf(" %c",letras[l]);  
 
-   }
+    }
         printf("\n  =====================");  
         printf("\n");  
 
