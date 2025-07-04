@@ -30,11 +30,28 @@ int main(){
 while(h<6){
 
     tab[0][h]=3;
+    tab[1][h]=3;
     tab[h][5]=3;
-
+    tab[h][0]=3;
+    
     h++;
 
 }
+
+//Criar os barcos na diagonal.
+
+int n=1;
+int g,d;
+for(int m=7;m<10;m++){
+    n++;
+     for(d=0;d<3;d++){
+     
+        tab[m][n]=3;
+         tab[m][n+1]=3;
+     }
+      
+    }
+     
         
 //Cria o print do tabulheiro.
     printf("  "); 
